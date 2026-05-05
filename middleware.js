@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 export function middleware(request) {
   const auth = request.headers.get("authorization");
 
@@ -10,7 +12,7 @@ export function middleware(request) {
     const [user, pass] = decoded.split(":");
 
     if (user === username && pass === password) {
-      return;
+      return NextResponse.next();
     }
   }
 
@@ -23,5 +25,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: "/:path*",
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };
