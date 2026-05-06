@@ -1166,67 +1166,111 @@
   </section>
 
   <!-- ── SLIDE 2: FUNNEL DIAGNOSIS ── -->
-  <section data-screen-label="02 Funnel">
-    <div class="stripe-top"></div>
-    <div class="slide-inner" style="padding-bottom: 24px;">
-      <div class="eyebrow">Diagnosis</div>
-      <h2 class="tight" style="margin-bottom:32px;">The biggest leak isn't checkout.<br>It's before users see anything they made.</h2>
-      <div class="s2-layout">
+<section data-screen-label="02 Funnel">
+  <div class="stripe-top"></div>
+  <div class="slide-inner" style="padding-bottom:24px;">
+    <div class="eyebrow">Diagnosis</div>
+    <h2 class="tight" style="margin-bottom:28px;">The biggest leak isn't checkout.<br>It's before users see anything they made.</h2>
+    <div class="s2-layout">
+
+      <!-- LEFT: centered tapering funnel -->
+      <div style="display:flex; flex-direction:column; gap:6px; justify-content:center;">
+
         <div>
-          <div class="funnel-wrap">
-            <div class="funnel-row">
-              <div class="funnel-label">Enter creation flow</div>
-              <div class="funnel-bar-wrap"><div class="funnel-bar" style="width:100%; background: var(--ink-faint);"></div></div>
-              <div class="funnel-pct">100%</div>
-            </div>
-            <div class="funnel-connector"></div>
-            <div class="funnel-row">
-              <div class="funnel-label">Select a product</div>
-              <div class="funnel-bar-wrap"><div class="funnel-bar dim" style="width:72%;"></div></div>
-              <div class="funnel-pct">72%</div>
-            </div>
-            <div class="funnel-connector"></div>
-            <div class="funnel-row">
-              <div class="funnel-label">Add a design element</div>
-              <div class="funnel-bar-wrap"><div class="funnel-bar dim" style="width:46%;"></div></div>
-              <div class="funnel-pct muted">46%</div>
-            </div>
-            <div class="funnel-drop">↓ 15pp drop — the cliff</div>
-            <div class="funnel-row">
-              <div class="funnel-label" style="font-weight:700;">Reach preview</div>
-              <div class="funnel-bar-wrap"><div class="funnel-bar highlight" style="width:31%;"></div></div>
-              <div class="funnel-pct" style="color:var(--accent); font-size:20px;">31%</div>
-            </div>
-            <div class="funnel-connector"></div>
-            <div class="funnel-row">
-              <div class="funnel-label">Add to cart</div>
-              <div class="funnel-bar-wrap"><div class="funnel-bar dim" style="width:11%;"></div></div>
-              <div class="funnel-pct">11%</div>
-            </div>
-            <div class="funnel-connector"></div>
-            <div class="funnel-row">
-              <div class="funnel-label">Purchase</div>
-              <div class="funnel-bar-wrap"><div class="funnel-bar dim" style="width:6%;"></div></div>
-              <div class="funnel-pct">6%</div>
-            </div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+            <span style="font-size:16px; font-weight:500; color:var(--ink-muted);">Enter creation flow</span>
+            <span style="font-size:18px; font-weight:700;">100%</span>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <div style="width:100%; height:34px; background:var(--ink-faint); border-radius:4px;"></div>
           </div>
         </div>
-        <div style="display:flex; flex-direction:column; gap:16px;">
-          <div class="stat-block">
-            <div class="stat-num">69%</div>
-            <div class="stat-label">of creation flows abandoned<br>before a user sees anything they made</div>
+
+        <div style="display:flex; justify-content:center; color:var(--ink-faint); font-size:13px;">▼</div>
+
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+            <span style="font-size:16px; font-weight:500; color:var(--ink-muted);">Select a product</span>
+            <span style="font-size:18px; font-weight:700;">72%</span>
           </div>
-          <div class="data-pills">
-            <div class="data-pill"><strong>6m 40s</strong> avg time to first preview today</div>
-            <div class="data-pill"><strong>54%</strong> of designs are text-only — lowest-effort default</div>
-            <div class="data-pill"><strong>68%</strong> of creation starts are on mobile</div>
+          <div style="display:flex; justify-content:center;">
+            <div style="width:72%; height:34px; background:var(--ink-faint); border-radius:4px;"></div>
           </div>
-          <div class="pull-quote">"Starting from a blank editor is intimidating."</div>
         </div>
+
+        <div style="display:flex; justify-content:center; color:var(--ink-faint); font-size:13px;">▼</div>
+
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+            <span style="font-size:16px; font-weight:500; color:var(--ink-muted);">Add a design element</span>
+            <span style="font-size:18px; font-weight:700;">46%</span>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <div style="width:46%; height:34px; background:var(--ink-faint); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <!-- CLIFF ANNOTATION -->
+        <div style="display:flex; align-items:center; gap:12px; padding:8px 0;">
+          <div style="flex:1; height:1px; background:var(--accent); opacity:0.4;"></div>
+          <div style="font-size:13px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--accent);">↓ 15pp cliff — 69% abandon here</div>
+          <div style="flex:1; height:1px; background:var(--accent); opacity:0.4;"></div>
+        </div>
+
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+            <span style="font-size:16px; font-weight:700; color:var(--ink);">Reach preview</span>
+            <span style="font-size:18px; font-weight:700; color:var(--accent);">31%</span>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <div style="width:31%; height:34px; background:var(--accent); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:center; color:var(--ink-faint); font-size:13px;">▼</div>
+
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+            <span style="font-size:16px; font-weight:500; color:var(--ink-muted);">Add to cart</span>
+            <span style="font-size:18px; font-weight:700;">11%</span>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <div style="width:11%; height:34px; background:var(--border); border-radius:4px;"></div>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:center; color:var(--ink-faint); font-size:13px;">▼</div>
+
+        <div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:5px;">
+            <span style="font-size:16px; font-weight:500; color:var(--ink-muted);">Purchase</span>
+            <span style="font-size:18px; font-weight:700;">6%</span>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <div style="width:6%; height:34px; background:var(--border); border-radius:4px;"></div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- RIGHT: stat block, pills, quote — unchanged -->
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        <div class="stat-block">
+          <div class="stat-num">69%</div>
+          <div class="stat-label">of creation flows abandoned<br>before a user sees anything they made</div>
+        </div>
+        <div class="data-pills">
+          <div class="data-pill"><strong>6m 40s</strong> avg time to first preview today</div>
+          <div class="data-pill"><strong>54%</strong> of designs are text-only — lowest-effort default</div>
+          <div class="data-pill"><strong>68%</strong> of creation starts are on mobile</div>
+        </div>
+        <div class="pull-quote">"Starting from a blank editor is intimidating."</div>
+      </div>
+
     </div>
-    <div class="slide-footer"><span>Diagnosis — Funnel</span><span class="right">02 / 15</span></div>
-  </section>
+  </div>
+  <div class="slide-footer"><span>Diagnosis — Funnel</span><span class="right">02 / 15</span></div>
+</section>
 
   <!-- ── SLIDE 3: SEGMENT TABLE ── -->
   <section data-screen-label="03 Segments">
